@@ -1,13 +1,13 @@
 import express, { Request, Response } from 'express';
 
 // Create an instance of the express application
-const app = express();
+const app = express()
 
 // Define a port
 const port = 3000;
 
 // Middleware (optional)
-app.use(express.json());
+app.use(express.json())
 
 // Define a basic route
 app.get('/', (req: Request, res: Response) => {
