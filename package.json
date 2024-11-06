@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "node build/index",
-    "build": "rimraf tsc -p .",
-    "dev": "tsc-watch --onSuccess \"npm start\""
-  },
+"scripts": {
+  "start": "node build/index",
+  "build": "rimraf build && tsc -p .",
+  "dev": "tsc-watch --onSuccess \"npm start\""
+},
+
   "devDependencies": {
     "@types/express": "^5.0.0",
     "pre-commit": "^1.2.2",
